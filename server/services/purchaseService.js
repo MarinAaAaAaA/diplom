@@ -10,7 +10,6 @@ class PurchaseService {
       raw: false
     });
 
-    // Превратим в простой JSON-массив
     return certs.map(cert => ({
       id: cert.id,
       domain: cert.domain,
