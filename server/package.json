@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-fileupload": "^1.5.1",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^5.1.5",
+    "node-cron": "^4.0.6",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
+    "pg": "^8.14.0",
+    "pg-hstore": "^2.3.4",
+    "ru-validation-codes": "^2.9.0",
+    "sequelize": "^6.37.6",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  }
+}

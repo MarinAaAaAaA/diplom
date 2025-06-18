@@ -1,0 +1,132 @@
+.certCatalog {
+  margin: 80px 0;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #26337C;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.certGrid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.certCard {
+  position: relative;
+  width: 375px;
+  height: 227px;
+  padding: 32px 24px;
+  background: #F7F7FF;
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.certCard:hover {
+  transform: translateY(-4px);
+}
+
+.bigLetter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 258px;
+  /* 6% вместо 0.06 для совместимости */
+  color: rgba(111, 108, 144, 6%);
+  pointer-events: none;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000;
+  min-height: calc(2 * 1.2em);
+  margin: 0 0 16px;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+}
+
+.cardList {
+  margin: 50px 0 0 0;
+  padding: 0 0 0 16px;
+  list-style: disc;
+  color: #4B4A4A;
+}
+.cardList li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.arrowWrap {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+}
+
+.arrowIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 2px dashed #000;
+  border-radius: 50%;
+  background: transparent;
+  transform: rotate(-30deg);
+  transition:
+    background-color 0.3s ease,
+    border-style     0.3s ease,
+    transform        0.3s ease;
+}
+
+.arrowIcon img {
+  filter: invert(1);
+  width: 16px;
+  height: 16px;
+  transition: filter 0.3s ease;
+}
+
+.certCard:hover .arrowIcon {
+  background-color: #26337C;
+  border: none;
+  transform: rotate(0deg) translateX(4px);
+}
+
+.certCard:hover .arrowIcon img {
+  filter: invert(0);
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+  .certGrid { gap: 24px; }
+  .certCard {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .bigLetter { font-size: 120px; }
+  .cardTitle { font-size: 18px; }
+  .cardList li { font-size: 13px; }
+  .arrowIcon {
+    width: 32px;
+    height: 32px;
+  }
+}

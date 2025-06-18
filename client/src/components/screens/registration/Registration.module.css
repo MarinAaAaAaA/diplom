@@ -1,0 +1,106 @@
+:root {
+  --color-brown: #000;
+  --color-accent: #26337C;
+  --color-card: #FFFFFF;
+}
+
+.registrationPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.formWrapper {
+  background-color: var(--color-card);
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--color-brown);
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: var(--color-brown);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: var(--color-accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(208,169,143,0.2);
+}
+
+.btn {
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.btn:hover {
+  background-color: #6F6C90;
+}
+
+.formFooter {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.link {
+  color: var(--color-brown);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+.errorText {
+  color: #d32f2f;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 480px) {
+  .formWrapper {
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.25rem;
+  }
+}

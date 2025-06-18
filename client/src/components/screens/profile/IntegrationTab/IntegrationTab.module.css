@@ -1,0 +1,151 @@
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #1d1f2c;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 24px 0 12px;
+  text-align: left;
+  color: #1d1f2c;
+}
+
+.hr {
+  margin: 28px 0;
+  border: none;
+  border-top: 1px solid #e3e3e5;
+}
+
+.btn,
+.btnSmall {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background .25s;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #1c2666;
+  color: #fff;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #182158;
+}
+
+.btnSmall {
+  padding: 6px 16px;
+  background: #eef0f6;
+  color: #1c2666;
+  font-size: 14px;
+}
+
+.btnSmall:hover {
+  background: #e1e4ec;
+}
+
+.keyBox {
+  background: #f5f6f9;
+  padding: 14px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.key {
+  font-family: monospace;
+  background: #e7e9ee;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 960px;
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #d7d7de;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.table th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.dialog {
+  max-width: 640px;
+  border: none;
+  border-radius: 8px;
+  padding: 24px 28px;
+}
+
+.dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: dlg-zoom 0.25s ease;
+}
+
+@keyframes dlg-zoom {
+  from {
+    transform: translate(-50%, -50%) scale(.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, .4);
+}
+
+.dialog pre {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 6px;
+  overflow: auto;
+  font-size: 13px;
+}
+
+.btnClose {
+  all: unset;
+  margin-top: 18px;
+  padding: 10px 22px;
+  background: #929292;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.btnClose:hover {
+  background: #7e7e7e;
+}

@@ -1,0 +1,83 @@
+.container {
+  width: 280px;
+  background: #1e1e1e;
+  color: #fff;
+  padding: 12px;
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 8px 0;
+  color: #9e9ea4;
+  font-size: 18px;
+}
+
+h3 {
+  margin: 12px 0 6px 0;
+  color: #b3b3b8;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.noChats {
+  color: #666;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.chatItem {
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.chatItem:hover {
+  background: #2f2f2f;
+}
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.chatTitle {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.chatStatus {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.register .chatStatus {
+  background: #28a745;
+}
+
+.process .chatStatus {
+  background: #ffc107;
+}
+
+.closed .chatStatus {
+  background: #6c757d; 
+}
+
+.chatPreview {
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1.3;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

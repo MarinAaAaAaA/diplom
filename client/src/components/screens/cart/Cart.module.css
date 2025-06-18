@@ -1,0 +1,126 @@
+.cartPage {
+  padding: 20px;
+}
+
+.cartPage h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 15px;
+}
+
+.cartItem {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartItem div {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.cartItem button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #929292;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cartItem button:hover {
+  background-color: #7e7e7e;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.checkoutButton {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #26337C;
+  color: #fff;
+  cursor: pointer;
+}
+
+.checkoutButton:hover {
+  background-color: #26337C;
+}
+
+
+
+.dialog {
+  max-width: 500px;
+  border: none;
+  border-radius: 8px;
+  padding: 24px 28px;
+}
+
+.dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, .4);
+}
+
+.domainRow {
+  margin: 12px 0;
+}
+
+.domainRow input {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dialogButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dialogButtons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dialogButtons button[type="submit"] {
+  background: #26337C;
+  color: #fff;
+}
+
+.dialogButtons button[type="button"] {
+  background: #929292;
+  color: #fff;
+}
+
+.dialogButtons button:hover {
+  opacity: .9;
+}

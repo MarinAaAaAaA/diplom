@@ -1,0 +1,162 @@
+:root {
+  --color-bg: #fff;
+  --color-brown: gray;
+  --color-accent: #26337C;
+  --color-card: #FFFFFF;
+
+  --color-nav-bg: #F1F2F8;
+  --color-nav-hover: #26337C;
+  --color-blue: #26337C;
+  --color-black: #000000;
+}
+
+
+.layoutWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-brown);
+}
+
+.profileWrapper {
+  background: rgba(111, 108, 144, 30%);
+}
+
+.header {
+  background: var(--color-card);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: .75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.leftPart {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logoLink img {
+  display: block;
+  width: auto;
+  height: 70px;
+}
+
+.nav {
+  background: var(--color-nav-bg);
+  border-radius: 33px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navList {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  display: inline-block;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-black);
+  text-decoration: none;
+  border-radius: 33px;
+  transition: background .2s, color .2s;
+}
+
+.navLink:hover,
+.navLink:focus-visible {
+  background: var(--color-blue);
+  color: var(--color-card);
+}
+
+.navLinkActive {
+  background: var(--color-blue);
+  color: var(--color-card);
+}
+
+.loginBtn {
+  display: inline-block;
+  background: var(--color-blue);
+  color: var(--color-card);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 40px;
+  border-radius: 33px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s;
+}
+
+.loginBtn:hover {
+  background: #1b2866;
+}
+
+
+.main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+
+.footer {
+  background: var(--color-card);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, .1);
+  padding: 1rem;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerText {
+  margin: 0;
+  color: var(--color-brown);
+  font-size: .9rem;
+}
+
+
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .leftPart {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    margin: 12px 0;
+    padding: 0 16px;
+  }
+
+  .navList {
+    gap: 16px;
+  }
+
+  .loginBtn {
+    align-self: flex-end;
+  }
+}

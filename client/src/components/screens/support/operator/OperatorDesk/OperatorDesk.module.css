@@ -1,0 +1,176 @@
+.desk {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+
+.sidebar {
+  width: 260px;
+  background: rgba(178, 115, 83, .4);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chatArea {
+  flex: 1;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarTitle {
+  color: #c7c7cb;
+  letter-spacing: .5px;
+  margin: 0 0 16px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  color: #e5e5e9;
+  margin: 18px 0 6px;
+}
+
+.chatItem {
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.chatItemActive {
+  outline: 2px solid #26337C;
+}
+
+.chatTitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+}
+
+.chatPreview {
+  font-size: 13px;
+  color: #666;
+}
+
+.badge {
+  background: #ffd500;
+  border-radius: 12px;
+  font-size: 10px;
+  padding: 2px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.empty {
+  color: #eee;
+  font-size: 13px;
+}
+
+.emptyCenter {
+  margin: auto;
+  color: #999;
+}
+
+.chatHeader {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #5c5c5c;
+}
+
+.finishBtn {
+  margin-left: 8px;
+  padding: 4px 10px;
+  font-size: 13px;
+  background: #26337C;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.chatWindow {
+  flex: 1;
+  background: #f5f5f7;
+  padding: 12px;
+  overflow-y: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msgSelf,
+.msgOther {
+  max-width: 70%;
+  margin: 4px 0;
+  padding: 10px 14px;
+  border-radius: 18px;
+  line-height: 1.4;
+  word-break: break-word;
+  font-size: 14px;
+}
+
+.msgSelf {
+  align-self: flex-end;
+  background: #26337C;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.msgOther {
+  align-self: flex-start;
+  background: #e5e5ea;
+  color: #000;
+  border-bottom-left-radius: 4px;
+}
+
+/* ----- form ----- */
+.form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form button {
+  margin-left: 8px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 20px;
+  background: #26337C;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ----- purchases ----- */
+.purchases {
+  margin-top: 26px;
+}
+
+.purchaseItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.purchaseItem a {
+  color: #26337C;
+  text-decoration: none;
+}
+
+.purchaseItem a:hover {
+  text-decoration: underline;
+}

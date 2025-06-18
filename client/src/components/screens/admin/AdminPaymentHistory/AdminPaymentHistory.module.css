@@ -1,0 +1,36 @@
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: left;
+    color: #26337C;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th,
+  .table td {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .table th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: #fafafa;
+  }

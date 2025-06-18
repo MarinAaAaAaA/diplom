@@ -1,0 +1,96 @@
+.catalog {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h2 {
+  font-size: 36px;
+  color: #26337C;
+  margin-bottom: 50px;
+}
+
+.categorySection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.categoryLabel {
+  font-size: 350px;
+  line-height: 1;
+  color: rgba(111, 108, 144, 0.15);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cards {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;      
+  gap: 20px;  
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px 20px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.cardPrice {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.priceSuffix {
+  font-size: 14px;
+  color: #555;
+  margin-left: 4px;
+}
+
+.cardDesc {
+  position: relative;
+  padding-left: 12px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.cardDesc::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #555;
+}
+
+.cardButton {
+  width: 100%;
+  max-width: 220px;
+  background-color: #26337C;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cardButton:hover {
+  background-color: #1f2f77;
+}
